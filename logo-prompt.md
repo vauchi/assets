@@ -1,3 +1,6 @@
+<!-- SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me> -->
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+
 # Logo Generation Prompt
 
 For use with Gemini, DALL-E, Midjourney, or other image generation tools.
