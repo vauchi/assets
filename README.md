@@ -54,4 +54,4 @@ Text: `#1f2937` (Dark Gray)
 
 ## License
 
-MIT - These assets may be used in projects related to Vauchi.
+GPL-3.0-or-later - See [LICENSE](LICENSE) for details.
