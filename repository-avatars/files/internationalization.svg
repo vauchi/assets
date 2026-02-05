@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#0288d1"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#26c6da"/>
+      <stop offset="100%" style="stop-color:#00838f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="#1a1a2e"/>
+
+  <!-- Globe -->
+  <circle cx="256" cy="245" r="95" fill="url(#g1)" opacity="0.2"/>
+  <circle cx="256" cy="245" r="95" fill="none" stroke="url(#g1)" stroke-width="4"/>
+  <!-- Longitude -->
+  <ellipse cx="256" cy="245" rx="45" ry="95" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.5"/>
+  <!-- Latitude -->
+  <ellipse cx="256" cy="245" rx="95" ry="32" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.5"/>
+  <line x1="161" y1="245" x2="351" y2="245" stroke="url(#g1)" stroke-width="2" opacity="0.4"/>
+  <!-- Language character bubbles -->
+  <g font-family="serif" font-weight="bold">
+    <!-- "A" bubble top-left -->
+    <circle cx="155" cy="155" r="28" fill="url(#g2)" opacity="0.85"/>
+    <text x="155" y="164" text-anchor="middle" font-size="26" fill="#fff" opacity="0.9">A</text>
+    <!-- Chinese character bubble top-right -->
+    <circle cx="365" cy="165" r="24" fill="url(#g2)" opacity="0.7"/>
+    <text x="365" y="174" text-anchor="middle" font-size="22" fill="#fff" opacity="0.9">字</text>
+    <!-- Arabic-style bubble bottom-right -->
+    <circle cx="370" cy="340" r="22" fill="url(#g2)" opacity="0.6"/>
+    <text x="370" y="349" text-anchor="middle" font-size="20" fill="#fff" opacity="0.9">ع</text>
+    <!-- Devanagari-style bubble bottom-left -->
+    <circle cx="148" cy="350" r="20" fill="url(#g2)" opacity="0.55"/>
+    <text x="148" y="358" text-anchor="middle" font-size="18" fill="#fff" opacity="0.9">अ</text>
+  </g>
+  <!-- Accent dots -->
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="120" cy="400" r="5"/>
+    <circle cx="395" cy="120" r="5"/>
+  </g>
+
+</svg>
