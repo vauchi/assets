@@ -7,7 +7,20 @@
 # Brand assets and images
 
 stages:
+  - lint
   - validate
+
+reuse-lint:
+  image:
+    name: fsfe/reuse:latest
+    entrypoint: [""]
+  stage: lint
+  before_script:
+    - command -v reuse >/dev/null 2>&1 || pip3 install --quiet reuse
+  script:
+    - reuse lint
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
 
 validate:files:
   stage: validate
