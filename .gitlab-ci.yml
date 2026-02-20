@@ -6,25 +6,22 @@
 #
 # Brand assets and images
 
+include:
+  - project: 'vauchi/scripts'
+    ref: main
+    file:
+      - '/ci-templates/reuse.yml'
+
 stages:
   - lint
   - validate
 
-reuse-lint:
-  image:
-    name: fsfe/reuse:latest
-    entrypoint: [""]
-  stage: lint
-  before_script:
-    - command -v reuse >/dev/null 2>&1 || pip3 install --quiet reuse
-  script:
-    - reuse lint
-  rules:
-    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+# REUSE compliance provided by vauchi/scripts ci-templates/reuse.yml
 
 validate:files:
   stage: validate
   image: alpine:latest
+  needs: []
   script:
     - echo "Validating asset files..."
     - test -f logo.svg || (echo "Missing logo.svg" && exit 1)
