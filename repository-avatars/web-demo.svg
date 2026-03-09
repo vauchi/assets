@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7"/>
+      <stop offset="100%" style="stop-color:#0288d1"/>
+    </linearGradient>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#26c6da"/>
+      <stop offset="100%" style="stop-color:#00838f"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="#1a1a2e"/>
+
+  <!-- Browser window -->
+  <rect x="116" y="130" width="280" height="210" rx="14" fill="#16213e" stroke="url(#g1)" stroke-width="3" opacity="0.9"/>
+  <!-- Title bar -->
+  <rect x="116" y="130" width="280" height="34" rx="14" fill="url(#g1)" opacity="0.25"/>
+  <rect x="116" y="150" width="280" height="14" fill="url(#g1)" opacity="0.25"/>
+  <!-- Window buttons -->
+  <circle cx="142" cy="148" r="6" fill="#4fc3f7" opacity="0.6"/>
+  <circle cx="162" cy="148" r="6" fill="#26c6da" opacity="0.6"/>
+  <circle cx="182" cy="148" r="6" fill="#0288d1" opacity="0.6"/>
+  <!-- Address bar -->
+  <rect x="210" y="139" width="160" height="16" rx="8" fill="#1a1a2e" opacity="0.4" stroke="#4fc3f7" stroke-width="1"/>
+  <!-- Content lines -->
+  <rect x="136" y="184" width="120" height="8" rx="4" fill="#4fc3f7" opacity="0.3"/>
+  <rect x="136" y="202" width="200" height="6" rx="3" fill="#4fc3f7" opacity="0.15"/>
+  <rect x="136" y="216" width="170" height="6" rx="3" fill="#4fc3f7" opacity="0.15"/>
+  <rect x="136" y="230" width="140" height="6" rx="3" fill="#4fc3f7" opacity="0.1"/>
+  <!-- Play triangle (demo) -->
+  <path d="M310,260 L346,285 L310,310 Z" fill="url(#g2)" opacity="0.8"/>
+  <!-- Monitor stand -->
+  <rect x="240" y="340" width="32" height="24" rx="2" fill="url(#g1)" opacity="0.4"/>
+  <rect x="212" y="360" width="88" height="8" rx="4" fill="url(#g1)" opacity="0.5"/>
+  <!-- Globe icon (web) -->
+  <circle cx="168" cy="280" r="24" fill="none" stroke="url(#g2)" stroke-width="2.5" opacity="0.5"/>
+  <ellipse cx="168" cy="280" rx="12" ry="24" fill="none" stroke="url(#g2)" stroke-width="2" opacity="0.4"/>
+  <line x1="144" y1="280" x2="192" y2="280" stroke="url(#g2)" stroke-width="1.5" opacity="0.4"/>
+  <!-- Accent dots -->
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="100" cy="410" r="5"/>
+    <circle cx="410" cy="110" r="5"/>
+  </g>
+
+</svg>
