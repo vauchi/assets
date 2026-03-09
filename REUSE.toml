@@ -32,7 +32,7 @@ SPDX-License-Identifier = "GPL-3.0-or-later"
 
 # Binary/media files
 [[annotations]]
-path = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.ico", "**/*.svg", "**/*.webp"]
+path = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.ico", "**/*.icns", "**/*.svg", "**/*.webp"]
 SPDX-FileCopyrightText = "2026 Mattia Egloff <mattia.egloff@pm.me>"
 SPDX-License-Identifier = "GPL-3.0-or-later"
 
