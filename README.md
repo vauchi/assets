@@ -1,6 +1,8 @@
 <!-- SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me> -->
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 
+[![REUSE](https://api.reuse.software/badge/gitlab.com/vauchi/assets)](https://api.reuse.software/info/gitlab.com/vauchi/assets)
+
 # Vauchi Assets
 
 Brand assets, logos, and visual resources for Vauchi.
