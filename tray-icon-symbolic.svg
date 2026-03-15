@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Monochrome template icon — macOS template image + freedesktop symbolic -->
+  <!-- Black fill = opaque; OS tints to match menu bar (white on dark, black on light) -->
+  <defs>
+    <mask id="m">
+      <rect width="32" height="32" fill="white"/>
+      <path d="M11 16 L14.5 19.5 L21 12.5"
+            fill="none" stroke="black" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </mask>
+  </defs>
+  <path d="M16 3 L26 8 V18 C26 24.5 16 29 16 29 C16 29 6 24.5 6 18 V8 Z"
+        fill="#000" mask="url(#m)"/>
+</svg>

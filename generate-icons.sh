@@ -209,7 +209,30 @@ MANIFEST
 echo "  Created PWA icons (favicon, apple-touch, 192, 512)"
 
 # ============================================================
-# 7. GitLab avatar
+# 7. Tray icons — SVG source + optional PNG rasterization
+# ============================================================
+echo "=== Tray icons ==="
+TRAY_DIR="$OUT_DIR/tray"
+mkdir -p "$TRAY_DIR"
+
+cp "$SCRIPT_DIR/tray-icon.svg" "$TRAY_DIR/"
+cp "$SCRIPT_DIR/tray-icon-symbolic.svg" "$TRAY_DIR/"
+
+if command -v rsvg-convert &>/dev/null; then
+    for size in 16 22 24 32 48; do
+        rsvg-convert -w "$size" -h "$size" "$SCRIPT_DIR/tray-icon.svg" \
+            -o "$TRAY_DIR/tray-icon-${size}.png"
+        rsvg-convert -w "$size" -h "$size" "$SCRIPT_DIR/tray-icon-symbolic.svg" \
+            -o "$TRAY_DIR/tray-icon-symbolic-${size}.png"
+    done
+    echo "  Created tray icon PNGs (5 sizes x 2 variants)"
+else
+    echo "  SVGs only (install rsvg-convert for PNG rasterization)"
+fi
+echo "  Copied tray-icon.svg + tray-icon-symbolic.svg"
+
+# ============================================================
+# 8. GitLab avatar
 # ============================================================
 echo "=== GitLab avatar ==="
 resize "$SOURCE_PNG" 192 "$OUT_DIR/gitlab-avatar.png"
@@ -238,21 +261,26 @@ if $INSTALL; then
         mkdir -p "$WORKSPACE/macos/Vauchi/Assets.xcassets/AppIcon.appiconset"
         cp "$OUT_DIR/AppIcon.icns" "$WORKSPACE/macos/Vauchi/"
         cp "$IOS_DIR"/* "$WORKSPACE/macos/Vauchi/Assets.xcassets/AppIcon.appiconset/"
-        echo "  macOS: installed .icns + asset catalog"
+        cp "$TRAY_DIR/tray-icon-symbolic.svg" "$WORKSPACE/macos/Vauchi/"
+        echo "  macOS: installed .icns + asset catalog + tray icon"
     fi
 
     # Linux GTK
     if [[ -d "$WORKSPACE/linux-gtk" ]]; then
         cp -r "$LINUX_DIR" "$WORKSPACE/linux-gtk/data/icons/hicolor" 2>/dev/null || \
         { mkdir -p "$WORKSPACE/linux-gtk/data/icons" && cp -r "$OUT_DIR/linux/icons/hicolor" "$WORKSPACE/linux-gtk/data/icons/"; }
-        echo "  linux-gtk: installed hicolor icons"
+        mkdir -p "$WORKSPACE/linux-gtk/data/icons"
+        cp "$TRAY_DIR/tray-icon.svg" "$TRAY_DIR/tray-icon-symbolic.svg" "$WORKSPACE/linux-gtk/data/icons/"
+        echo "  linux-gtk: installed hicolor + tray icons"
     fi
 
     # Linux Qt
     if [[ -d "$WORKSPACE/linux-qt" ]]; then
         cp -r "$LINUX_DIR" "$WORKSPACE/linux-qt/data/icons/hicolor" 2>/dev/null || \
         { mkdir -p "$WORKSPACE/linux-qt/data/icons" && cp -r "$OUT_DIR/linux/icons/hicolor" "$WORKSPACE/linux-qt/data/icons/"; }
-        echo "  linux-qt: installed hicolor icons"
+        mkdir -p "$WORKSPACE/linux-qt/data/icons"
+        cp "$TRAY_DIR/tray-icon.svg" "$TRAY_DIR/tray-icon-symbolic.svg" "$WORKSPACE/linux-qt/data/icons/"
+        echo "  linux-qt: installed hicolor + tray icons"
     fi
 
     # Windows

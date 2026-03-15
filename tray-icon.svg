@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Brand-matching tray icon (color) — shield+checkmark from logo.svg -->
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94e2d5"/>
+      <stop offset="100%" stop-color="#74c7ec"/>
+    </linearGradient>
+  </defs>
+  <path d="M16 3 L26 8 V18 C26 24.5 16 29 16 29 C16 29 6 24.5 6 18 V8 Z"
+        fill="url(#g)" stroke="#313244" stroke-width="1.5"/>
+  <path d="M11 16 L14.5 19.5 L21 12.5"
+        fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
