@@ -22,7 +22,7 @@ stages:
 
 validate:files:
   stage: validate
-  image: alpine:latest
+  image: alpine:3.21
   needs: []
   script:
     - echo "Validating asset files..."
