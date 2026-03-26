@@ -28,6 +28,7 @@ lint:images:
 validate:files:
   stage: validate
   image: alpine:3.21
+  tags: [docker]
   needs: []
   script:
     - echo "Validating asset files..."
