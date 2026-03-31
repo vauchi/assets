@@ -3,7 +3,7 @@
 
 > **Mirror:** This repo is a read-only mirror of [gitlab.com/vauchi/assets](https://gitlab.com/vauchi/assets). Please open issues and merge requests there.
 
-[![Pipeline](https://vauchi.gitlab.io/assets/badges/pipeline.svg)](https://gitlab.com/vauchi/assets/-/pipelines)
+[![Pipeline](https://img.shields.io/endpoint?url=https://vauchi.gitlab.io/assets/badges/pipeline.json&label=pipeline)](https://gitlab.com/vauchi/assets/-/pipelines)
 [![REUSE](https://api.reuse.software/badge/gitlab.com/vauchi/assets)](https://api.reuse.software/info/gitlab.com/vauchi/assets)
 
 # Vauchi Assets
@@ -19,6 +19,7 @@ Brand assets, logos, and visual resources for Vauchi.
 ## Usage
 
 These assets are used across all Vauchi projects:
+
 - Website
 - iOS app
 - Android app
