@@ -16,12 +16,15 @@ workflow:
 
 include:
   - project: 'vauchi/scripts'
-    ref: main
+    ref: ci-templates-v2026.07.1
     file:
       - '/ci-templates/reuse.yml'
       - '/ci-templates/image-lint.yml'
       - '/ci-templates/badges.yml'
       - '/ci-templates/github-mirror.yml'
+
+variables:
+  VAUCHI_SCRIPTS_REF: "ci-templates-v2026.07.1"
 
 stages:
   - lint
