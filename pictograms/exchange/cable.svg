@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me> -->
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Cable">
+  <rect x="2" y="2" width="7" height="10.5" rx="1.8"/>
+  <rect x="15" y="2" width="7" height="10.5" rx="1.8"/>
+  <path d="M4.6 12.5h1.8v1.6H4.6zM17.6 12.5h1.8v1.6h-1.8z"/>
+  <path d="M5.5 14.1v2.4A3.5 3.5 0 0 0 9 20h6a3.5 3.5 0 0 0 3.5-3.5v-2.4"/>
+</svg>

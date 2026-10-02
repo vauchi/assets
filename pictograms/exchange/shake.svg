@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me> -->
+<!-- SPDX-License-Identifier: GPL-3.0-or-later -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Shake">
+  <rect x="8" y="4" width="8" height="16" rx="1.8"/>
+  <path d="M5 8.5q-1.6 3.5 0 7M2.6 7q-2.6 5 0 10M19 8.5q1.6 3.5 0 7M21.4 7q2.6 5 0 10"/>
+</svg>
