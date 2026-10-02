@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me>
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# One terminal glyph per pictogram, for the TUI and CLI: single-width so
+# columns stay aligned in every terminal (generate.py enforces it).
+glance	◉
+hover	⧉
+bump	✸
+shake	↭
+magic	✦
+tap_tap	⋈
+tap_hover_shake	⌗
+link	⚭
+cable	⌁

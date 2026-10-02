@@ -50,6 +50,21 @@ validate:files:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
     - if: $CI_COMMIT_BRANCH == "main"
 
+# The per-platform pictogram files are derived from the drawn SVGs; a drawing
+# edited without regenerating would ship stale icons to every shell (#473).
+validate:pictograms:
+  stage: validate
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/alpine:3.21
+  tags: [docker]
+  needs: []
+  before_script:
+    - apk add --no-cache python3
+  script:
+    - python3 pictograms/generate.py --check
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "main"
+
 # ============================================================
 # Deploy Stage — Badge Pages
 # ============================================================
