@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me> -->
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Hover">
-  <rect x="1.5" y="5.5" width="6.2" height="13" rx="1.8"/>
-  <rect x="16.3" y="5.5" width="6.2" height="13" rx="1.8"/>
-  <circle cx="4.6" cy="8" r="0.5" fill="currentColor"/>
-  <circle cx="19.4" cy="8" r="0.5" fill="currentColor"/>
-  <path d="M9 8.5l6 7.5M15 8.5l-6 7.5" stroke-dasharray="1.3 1.7"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <rect x="2" y="2" width="20" height="8.6" rx="1.8"/>
+  <rect x="4.2" y="3.75" width="2.2" height="2.2" rx="0.4"/>
+  <rect x="7.300000000000001" y="3.75" width="2.2" height="2.2" rx="0.4"/>
+  <rect x="4.2" y="6.8500000000000005" width="2.2" height="2.2" rx="0.4"/>
+  <path d="M7.80 7.35h0.01M9.00 8.55h0.01" stroke-width="1.9"/>
+  <circle cx="18.6" cy="6.3" r="1.1"/>
+  <rect x="2" y="13.4" width="20" height="8.6" rx="1.8"/>
+  <rect x="14.5" y="15.15" width="2.2" height="2.2" rx="0.4"/>
+  <rect x="17.599999999999998" y="15.15" width="2.2" height="2.2" rx="0.4"/>
+  <rect x="14.5" y="18.25" width="2.2" height="2.2" rx="0.4"/>
+  <path d="M18.10 18.75h0.01M19.30 19.95h0.01" stroke-width="1.9"/>
+  <circle cx="5.4" cy="17.7" r="1.1"/>
 </svg>
