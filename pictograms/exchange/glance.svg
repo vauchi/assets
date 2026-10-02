@@ -2,10 +2,7 @@
 <!-- SPDX-FileCopyrightText: 2026 Mattia Egloff <mattia.egloff@pm.me> -->
 <!-- SPDX-License-Identifier: GPL-3.0-or-later -->
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <rect x="6.5" y="2" width="11" height="20" rx="1.8"/>
-  <rect x="8.4" y="5.6" width="3" height="3" rx="0.4"/>
-  <rect x="12.6" y="5.6" width="3" height="3" rx="0.4"/>
-  <rect x="8.4" y="9.799999999999999" width="3" height="3" rx="0.4"/>
-  <path d="M13.10 10.30h0.01M15.10 12.30h0.01" stroke-width="1.9"/>
-  <path d="M10.5 18.6h3"/>
+  <path d="M2 12s3.6-6.3 10-6.3S22 12 22 12s-3.6 6.3-10 6.3S2 12 2 12z"/>
+  <circle cx="12" cy="12" r="3"/>
+  <circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/>
 </svg>
