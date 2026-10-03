@@ -13,6 +13,8 @@ transforms), which every shell can consume, plus Android VectorDrawables.
 Usage:
   generate.py            write <group>/generated/
   generate.py --check    fail if generated/ is stale
+
+The GTK copies need picosvg (pip install picosvg==0.23.0).
 """
 
 import json
@@ -214,6 +216,42 @@ def terminal_glyphs(group, names):
     return table
 
 
+def gtk_symbolic(name, flat):
+    """A fill-only copy for GTK: before 4.20 GTK recolours a symbolic icon
+    by forcing a fill on every path, which turns stroked outlines into
+    solid blobs, so the strokes are expanded into filled shapes (#476)."""
+    try:
+        from picosvg.svg import SVG
+    except ImportError:
+        raise SystemExit("generate.py needs picosvg for the GTK copies: pip install picosvg==0.23.0")
+    body = re.sub(r"<!--.*?-->\s*", "", flat, flags=re.S).replace("currentColor", "#000000")
+    paths = re.findall(r'd="([^"]+)"', SVG.fromstring(body).topicosvg().tostring())
+    lines = [f"<!-- {line} -->" for line in HEADER.format(name=name).splitlines()]
+    lines.append(
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">'
+    )
+    lines += [f'  <path fill="#000000" d="{d}"/>' for d in paths]
+    lines.append("</svg>")
+    return "\n".join(lines) + "\n"
+
+
+def same_gtk_geometry(committed, fresh, tolerance=0.01):
+    """Stroke expansion runs in float maths that may differ in the last digit
+    between machines; compare path structure exactly and numbers within a
+    tolerance, so only a real change to a drawing counts as stale."""
+    split = lambda text: re.findall(rf"[A-Za-z]|{NUM}", text)
+    a, b = split(committed), split(fresh)
+    if len(a) != len(b):
+        return False
+    for x, y in zip(a, b):
+        if x.isalpha() or y.isalpha():
+            if x != y:
+                return False
+        elif abs(float(x) - float(y)) > tolerance:
+            return False
+    return True
+
+
 def outputs():
     for group in sorted(p for p in HERE.iterdir() if p.is_dir()):
         sources = sorted(group.glob("*.svg"))
@@ -229,6 +267,8 @@ def outputs():
             yield base / "svg" / source.name, flat_svg(source.stem, shapes)
             android_name = f"pictogram_{group.name}_{source.stem}.xml"
             yield base / "android" / android_name, vector_drawable(source.stem, shapes)
+            gtk_name = f"pictogram-{group.name}-{source.stem}-symbolic.svg"
+            yield base / "gtk" / gtk_name, gtk_symbolic(source.stem, flat_svg(source.stem, shapes))
 
 
 def main():
@@ -236,7 +276,11 @@ def main():
     stale = []
     for path, text in outputs():
         if check:
-            if not path.exists() or path.read_text(encoding="utf-8") != text:
+            current = path.read_text(encoding="utf-8") if path.exists() else None
+            fresh_enough = current == text or (
+                current is not None and path.parent.name == "gtk" and same_gtk_geometry(current, text)
+            )
+            if not fresh_enough:
                 stale.append(path.relative_to(HERE))
             continue
         path.parent.mkdir(parents=True, exist_ok=True)

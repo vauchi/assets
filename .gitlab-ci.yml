@@ -54,11 +54,13 @@ validate:files:
 # edited without regenerating would ship stale icons to every shell (#473).
 validate:pictograms:
   stage: validate
-  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/alpine:3.21
+  # Debian, not alpine: picosvg (the GTK fill-only copies, #476) needs
+  # skia-pathops, which ships manylinux wheels but none for musl.
+  image: ${CI_DEPENDENCY_PROXY_GROUP_IMAGE_PREFIX}/python:3.12-slim
   tags: [docker]
   needs: []
   before_script:
-    - apk add --no-cache python3
+    - pip install --quiet picosvg==0.23.0
   script:
     - python3 pictograms/generate.py --check
   rules:
