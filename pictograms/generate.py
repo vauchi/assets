@@ -253,7 +253,8 @@ def same_gtk_geometry(committed, fresh, tolerance=0.01):
 
 
 def outputs():
-    for group in sorted(p for p in HERE.iterdir() if p.is_dir()):
+    # A group is a folder of drawings; tests/ and other folders are not.
+    for group in sorted(p for p in HERE.iterdir() if p.is_dir() and any(p.glob("*.svg"))):
         sources = sorted(group.glob("*.svg"))
         glyphs = terminal_glyphs(group, [s.stem for s in sources])
         yield (
