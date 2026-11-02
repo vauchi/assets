@@ -15,6 +15,7 @@ Brand assets, logos, and visual resources for Vauchi.
 | File | Description |
 |------|-------------|
 | `logo.svg` | Main Vauchi logo (vector) |
+| `repository-avatars/` | Repository avatars, including app, display, hardware, and utility icons; SVG sources with matching 192 × 192 px PNG exports |
 
 ## Usage
 

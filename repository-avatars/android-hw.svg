@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Android Hardware</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <path d="M180 118 V140 M180 360 V382 M118 180 H140 M360 180 H382" fill="none" stroke="url(#teal)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M215 118 V140 M215 360 V382 M118 215 H140 M360 215 H382" fill="none" stroke="url(#teal)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M250 118 V140 M250 360 V382 M118 250 H140 M360 250 H382" fill="none" stroke="url(#teal)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M285 118 V140 M285 360 V382 M118 285 H140 M360 285 H382" fill="none" stroke="url(#teal)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M320 118 V140 M320 360 V382 M118 320 H140 M360 320 H382" fill="none" stroke="url(#teal)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="140" y="140" width="220" height="220" rx="24" fill="url(#blue)"/>
+  <rect x="171" y="171" width="158" height="158" rx="17" fill="url(#teal)"/>
+  <g transform="translate(250 254)">
+  <path d="M-58 24 A58 58 0 0 1 58 24 Z" fill="#1a1a2e"/>
+  <path d="M-38 -22 L-52 -44 M38 -22 L52 -44" fill="none" stroke="#1a1a2e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-25" cy="3" r="7" fill="#6ee7ef"/>
+  <circle cx="25" cy="3" r="7" fill="#6ee7ef"/>
+  </g>
+</svg>

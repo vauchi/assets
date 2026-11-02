@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Windows Display</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <rect x="100" y="118" width="300" height="212" rx="18" fill="#20263d" stroke="url(#blue)" stroke-width="10"/>
+  <path d="M105 160 H395" fill="none" stroke="url(#teal)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M324 140 h12 M358 134 l12 12 m0 -12 l-12 12" fill="none" stroke="#7ce2eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M224 336 L216 374 H284 L276 336" fill="url(#blue)"/>
+  <rect x="184" y="374" width="132" height="10" rx="5" fill="url(#teal)"/>
+  <rect x="122" y="180" width="92" height="128" rx="9" fill="url(#blue)"/>
+  <rect x="230" y="180" width="148" height="128" rx="9" fill="url(#teal)"/>
+  <path d="M139 202 h57 M139 226 h39 M250 204 h104 M250 229 h80 M250 254 h92" fill="none" stroke="#1a1a2e" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

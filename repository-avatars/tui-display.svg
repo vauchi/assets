@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Tui Display</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <rect x="100" y="118" width="300" height="212" rx="18" fill="#20263d" stroke="url(#blue)" stroke-width="10"/>
+  <path d="M105 160 H395" fill="none" stroke="url(#teal)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="122" cy="140" r="5" fill="#7ce2eb"/>
+  <circle cx="144" cy="140" r="5" fill="#7ce2eb"/>
+  <circle cx="166" cy="140" r="5" fill="#7ce2eb"/>
+  <path d="M224 336 L216 374 H284 L276 336" fill="url(#blue)"/>
+  <rect x="184" y="374" width="132" height="10" rx="5" fill="url(#teal)"/>
+  <rect x="128" y="182" width="74" height="124" rx="7" fill="none" stroke="url(#teal)" stroke-width="8"/>
+  <rect x="216" y="182" width="156" height="48" rx="7" fill="url(#teal)"/>
+  <rect x="216" y="244" width="156" height="62" rx="7" fill="none" stroke="url(#blue)" stroke-width="8"/>
+  <path d="M144 203 h39 M144 225 h25 M234 206 h92 M234 266 h76 M234 286 h45" fill="none" stroke="#c0f4fa" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

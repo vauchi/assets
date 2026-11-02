@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Markdown Plan</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <rect x="139" y="95" width="222" height="310" rx="20" fill="#20263d" stroke="url(#blue)" stroke-width="10"/>
+  <rect x="139" y="95" width="222" height="59" rx="17" fill="url(#teal)"/>
+  <path d="M166 135 V115 L178 127 L190 115 V135 M213 115 V135 M204 126 L213 135 L222 126" fill="none" stroke="#1a1a2e" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="167" y="188" width="29" height="29" rx="6" fill="url(#teal)"/>
+  <path d="M173 202 l6 6 l11 -13" fill="none" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M218 202 h100" fill="none" stroke="url(#blue)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="167" y="252" width="29" height="29" rx="6" fill="url(#teal)"/>
+  <path d="M173 266 l6 6 l11 -13" fill="none" stroke="#1a1a2e" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M218 266 h78" fill="none" stroke="url(#blue)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="167" y="316" width="29" height="29" rx="6" fill="none" stroke="url(#blue)" stroke-width="7"/>
+  <path d="M218 330 h108" fill="none" stroke="url(#blue)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

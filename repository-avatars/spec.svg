@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Spec</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <rect x="132" y="95" width="236" height="310" rx="20" fill="#20263d" stroke="url(#blue)" stroke-width="10"/>
+  <path d="M158 149 H222 M158 177 H274" fill="none" stroke="url(#teal)" stroke-width="11" stroke-linecap="round"/>
+  <path d="M303 130 L288 147 L303 164 M326 130 L341 147 L326 164" fill="none" stroke="url(#blue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M155 207 H345" stroke="#4e698b" stroke-width="6"/>
+  <path d="M250 265 V293 M193 320 V293 H307 V320" fill="none" stroke="url(#blue)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="213" y="231" width="74" height="38" rx="8" fill="url(#teal)"/>
+  <rect x="163" y="320" width="60" height="38" rx="8" fill="url(#blue)"/>
+  <rect x="277" y="320" width="60" height="38" rx="8" fill="url(#teal)"/>
+  <path d="M179 378 H207 M293 378 H321" stroke="#4e698b" stroke-width="6" stroke-linecap="round"/>
+</svg>

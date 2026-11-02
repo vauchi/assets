@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Ios App</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <rect x="136" y="136" width="228" height="228" rx="52" fill="url(#blue)"/>
+  <g transform="translate(250 250) scale(1.15)">
+  <rect x="-59" y="-58" width="118" height="116" rx="16" fill="#1a1a2e"/>
+  <circle cx="0" cy="-19" r="17" fill="url(#teal)"/>
+  <path d="M-33 32 C-33 -2 33 -2 33 32 Z" fill="url(#blue)"/>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Windows App</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <rect x="112" y="138" width="276" height="224" rx="18" fill="#20263d" stroke="url(#blue)" stroke-width="10"/>
+  <path d="M117 180 H383" fill="none" stroke="url(#teal)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M312 160 h12 M346 154 l12 12 m0 -12 l-12 12" fill="none" stroke="#7ce2eb" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(250 276)">
+  <rect x="-48" y="-48" width="42" height="42" rx="2" fill="url(#blue)"/>
+  <rect x="-48" y="6" width="42" height="42" rx="2" fill="url(#blue)"/>
+  <rect x="6" y="-48" width="42" height="42" rx="2" fill="url(#blue)"/>
+  <rect x="6" y="6" width="42" height="42" rx="2" fill="url(#blue)"/>
+  </g>
+</svg>

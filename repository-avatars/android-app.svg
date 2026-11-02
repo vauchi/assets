@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Android App</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <circle cx="250" cy="250" r="118" fill="url(#blue)"/>
+  <g transform="translate(250 256) scale(1.3)">
+  <path d="M-58 24 A58 58 0 0 1 58 24 Z" fill="#1a1a2e"/>
+  <path d="M-38 -22 L-52 -44 M38 -22 L52 -44" fill="none" stroke="#1a1a2e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="-25" cy="3" r="7" fill="#6ee7ef"/>
+  <circle cx="25" cy="3" r="7" fill="#6ee7ef"/>
+  </g>
+</svg>

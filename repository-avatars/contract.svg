@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-labelledby="title">
+  <title id="title">Vauchi Contract</title>
+  <defs>
+    <linearGradient id="blue" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#4fc3f7"/>
+      <stop offset="1" stop-color="#0288d1"/>
+    </linearGradient>
+    <linearGradient id="teal" gradientUnits="userSpaceOnUse" x1="90" y1="90" x2="410" y2="410">
+      <stop stop-color="#50dfdf"/>
+      <stop offset="1" stop-color="#0896ac"/>
+    </linearGradient>
+  </defs>
+  <circle cx="250" cy="250" r="240" fill="#1a1a2e"/>
+  <g fill="#4fc3f7" opacity="0.4">
+    <circle cx="111" cy="376" r="5"/>
+    <circle cx="393" cy="130" r="5"/>
+  </g>
+  <path d="M157 100 H287 L345 158 V380 Q345 398 327 398 H157 Q139 398 139 380 V118 Q139 100 157 100 Z" fill="#20263d" stroke="url(#blue)" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M287 100 V145 Q287 158 300 158 H345 Z" fill="url(#blue)"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M175 164 H239" stroke="url(#teal)" stroke-width="14"/>
+    <path d="M175 209 H306 M175 240 H281" stroke="url(#blue)" stroke-width="9"/>
+    <path d="M174 332 C184 306 202 300 199 324 C196 343 210 339 222 321 L229 333 H248" stroke="url(#teal)" stroke-width="9"/>
+    <path d="M174 359 H248" stroke="#4e698b" stroke-width="7"/>
+  </g>
+  <circle cx="331" cy="333" r="59" fill="url(#teal)" stroke="#1a1a2e" stroke-width="12"/>
+  <path d="M305 333 L323 351 L357 315" fill="none" stroke="#1a1a2e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
